@@ -46,5 +46,3 @@ app.listen(process.env.PORT || PORT, () => {
 
   dbConfig();
 });
-
-module.exports.handler = ServerlessHttp(app);

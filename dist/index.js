@@ -9,7 +9,6 @@ const main_1 = require("./main");
 const dbConfig_1 = require("./utils/dbConfig");
 const express_session_1 = __importDefault(require("express-session"));
 const cookie_parser_1 = __importDefault(require("cookie-parser"));
-const serverless_http_1 = __importDefault(require("serverless-http"));
 const app = (0, express_1.default)();
 const PORT = 2277;
 app.use((req, res, next) => {
@@ -40,4 +39,3 @@ app.listen(process.env.PORT || PORT, () => {
     console.clear();
     (0, dbConfig_1.dbConfig)();
 });
-module.exports.handler = (0, serverless_http_1.default)(app);
