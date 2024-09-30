@@ -17,7 +17,13 @@ app.use((req: Request, res: Response, next: NextFunction) => {
 });
 
 app.use(
-  cors({ origin: ["http://localhost:5174", "https://just-codify.web.app/"] })
+  cors({
+    origin: [
+      "http://localhost:5173",
+      "http://localhost:5174",
+      "https://just-codify.web.app/",
+    ],
+  })
 );
 
 app.use(express.json());
